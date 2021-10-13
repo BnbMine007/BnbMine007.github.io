@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="Hire Miners to earn BNB" name="description">
+	<meta name="image" content="miner-og-image.html">
+	<link rel="icon" href="images/bnb_logo.png" sizes="16x16" type="image/png">
+	<div style="background-image: url('https://bnbmine.finance/background.jpg');">
+	<!-- opengraph image -->
+	<meta property="og:image" content="miner-og-image.html">
+	<meta property="og:title" content="BNB Miner">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Hire Miners to earn BNB">
+	<meta property="og:url" content="index-2.html">
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="index-2.html">
+	<meta name="twitter:title" content="BNB Miner">
+	<meta name="twitter:description" content="Hire Miners to earn BNB Inu">
+	<meta name="twitter:image" content="miner-og-image.html">
+	<!-- favicon files -->
+
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#000000">
+	<title>BNB Miner</title>
+
+	<!-- bootstrap core CSS -->
+	<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="assets/css/jumbotron-narrow.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/custom.css" rel="stylesheet">
+	<!-- <link href="fonts.min.css" rel="stylesheet" type="text/css"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<link href="./css2.css%3Ffamily=Montserrat:wght@400%3B500%3B600&amp;display=swap.css" rel="stylesheet">
+</div></head>
+
+<body>
+	<div class="modal" id="myModal">
+		<div class="modal-content">
+			<div id="modal-internal"></div>
+		</div>
+	</div>
+	<div class="custom-container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div></div>
+				<div class="navbar-header">
+				</div>
+
+				<div class="mobile-align">
+					<ul class="nav navbar-nav navbar-right font-weight-normal">
+
+
+						<li><a class="social-pad"
+									href="https://bscscan.com/address/0x4fde8abc04a865dd5ff22b3ba27e050d1ddbeda6#code"
+									target="_blank"><img alt="BscScan Logo" class="social-icons" src="images/bscan_logo.png"><span
+									class="hide-mobile">Contract</span></a></li>
+							</ul>
+</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
+			<ul style="display:none;" class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+				<li role="presentation" class="active"><a href="index.html#home" id="miners-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">BNB Miner</a></li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="miners-tab">
+
+
+					<div class="banner">
+						<img width="350px" src="images/Logo&#32;Horizontaal.png" alt="">
+						<div class="title">
+							<p class="daily">3% Daily</p>
+							<p class="apr">1,095% APR</p>
+						</div>
+					</div>
+					<div>
+						<div class="container-fluid miners-tally-container">
+							<img alt="Miners" class="icon" src="images/Miners2.png">
+							<h2 class="tally-text"><u><span class="numminers">0</span></u> Miners</h2>
+						</div>
+<div class="digging-mined-container">
+							<div class="custom-row">
+								<img alt="Digging" class="icon" src="images/pickaxe.png">
+								<div class="dm-container-right textst">
+									<h2>Digging</h2>
+									<p><span id="production">0</span> feet per hour</p>
+									                  <span id="sellsforexample"></span>
+
+								</div>
+							</div>
+							<div class="custom-row">
+								<img alt="Mined" class="icon" src="images/Mined2.png">
+								<div class="dm-container-right">
+									<h2>Mined</h2>
+									<p><span id="sellprice">?</span> BNB</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="spend-container">
+							<div class="spend-input-continer">
+							<p id="spend-limit"></p>
+
+								<label for="spend"> Enter BNB Amount & Click Hire Below</label>
+								<div class="spend-input">
+									<input class="form-control" id="ethtospend" onchange="updateBuyPrice()" step="1" type="number" value="10">
+									<span class="bnb-text">BNB</span>
+								</div>
+							</div>
+							<button class="btn btn-lg btn-buy" onclick="buyEggs2(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play() " role="button">
+								Hire <span id="eggstobuy">?</span> Miners
+							</button>
+						</div>
+						<div class="other-button-container">
+							<button class="btn btn-lg btn-hatch" onclick="hatchEggs1(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play()" role="button">Hire more Miners</button>
+							<button class="btn btn-lg btn-sell" onclick="sellEggs(displayTransactionMessage); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo3').play(); document.getElementById('sellprice')" role="button">Pocket your Interest</button>
+
+
+
+						</div>
+
+
+						<div class="altcolor">
+
+							<img alt="Digging" style="width: 80px; margin-right: 20px; " src="images/bnb_logo.png">
+							<div>
+								<p> <span id="contractBal">?</span></p>
+								<p><span id="userTrx">?</span></p>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+			<div class="faq-container container-fluid">
+				<div class="faq">
+					<div class="row">
+						<div class="col-md-6 faq-box">
+							<h3 class="faq-heading">What happens when my barrel becomes full?</h3>
+							<p class="faq-text">Don't worry, your Miners will continue to mine once your barrel reads full.</p>
+						</div>
+						<div class="col-md-6 faq-box">
+							<h3 class="faq-heading">Can I take my initial BNB back?</h3>
+							<p class="faq-text">Over Time! Miners are not bought, Miners are hired therefore they can't be sold. Once Miners are hired they work for you indefinitely, providing you with an unlimited amount of BNB at a starting rate of 5% daily.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 faq-box">
+							<h3 class="faq-heading">How much are my fees?</h3>
+							<p class="faq-text">The only fee that users personally incur is their transaction gas fees, which is charged by the BSC network.</p>
+						</div>
+						<div class="col-md-6 faq-box">
+							<h3 class="faq-heading">When is the best time to Hire Miners?</h3>
+							<p class="faq-text">Always! No matter when you hire miners, you will begin with a return rate of 3% daily.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 faq-box">
+							<h3 class="faq-heading">How often should I compound?</h3>
+							<p class="faq-text">We recommend that you compound at least once per day but you are free to do so as often as you wish.</p>
+						</div>
+						<div class="col-md-6 faq-box">
+							<h3 class="faq-heading">How is BNBMiner sustainable?</h3>
+							<p class="faq-text">BNBMiner is sustained by continued community support, just as every other crypto coin, token or project. The difference is BNBMiner also has an algorithm that doesn't allow others to instantly dump their coins on the community.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 faq-box">
+							<h3 class="faq-heading">How to use BNBMiner on my phone?</h3>
+							<p class="faq-text">You can either use an app with a dapp browser and choose the Metamask/Injected option or simply use any browser that you want and choose WalletConnect to connect to your wallet's app on your phone.</p>
+						</div>
+						<div class="col-md-6 faq-box">
+							<h3 class="faq-heading">Is it better to compound or pocket?</h3>
+							<p class="faq-text">By design, compounding will be more profitable than pocketing in the long-term.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 faq-box">
+							<h3 class="faq-heading">How do referrals work?</h3>
+							<p class="faq-text">Once your wallet is connected to the BNBMiner website via the SmartChain (BSC) network, <br>you will notice your referral address appear at the bottom of the page. When a new user hires miners after clicking your personal referral link, the contract will send a BNB value equal to 5% instantly to your barrel. Be smart, use it to hire miners and build yourself a stream of income.</p>
+						</div>
+						<div class="col-md-6 faq-box">
+							<h3 class="faq-heading">When did BNBMiner launch?</h3>
+							<p class="faq-text">BNBMiner launched 10/13/2021 and continues to pay everyone as promised.</p>
+						</div>
+					</div>
+
+
+
+				</div>
+
+
+
+				<footer class="footer">
+
+					<div class="">
+						<div class="col-md-12">
+							<font style="font-size:14px">
+								<center>
+									<p>Earn 10% of the BNB used to hire miners by anyone who starts mining
+										using your link: <span id="playerreflink">?</span>
+									</p></center>
+								</font>
+							</div>
+					</div>
+
+						<center>
+							<ul class="nav navbar-nav navbar-right font-weight-normal">
+
+
+								<li><a class="social-pad"
+											href="https://bscscan.com/address/0x4fde8abc04a865dd5ff22b3ba27e050d1ddbeda6#code"
+											target="_blank"><img alt="BscScan Logo" class="social-icons" src="images/bscan_logo.png"><span
+											class="hide-mobile">Contract</span></a></li>
+									</ul>
+							</ul>
+						</center>
+
+					</div>
+				</footer>
+			</div>
+
+
+		<script src="assets/js/ie-emulation-modes-warning.js">
+	</script>
+	<script src="assets/js/web3.min.js">
+	</script>
+	<script src="interface.js">
+	</script>
+	<script src="main.js">
+	</script>
+	<audio id="lostmojo" autoplay="autoplay" loop="loop">
+
+<audio id="lostmojo2">
+
+<audio id="lostmojo3">
+
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="assets/js/ie10-viewport-bug-workaround.js">
+	</script>
+	<script src="https://bnbmine.finance/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+	<script src="https://bnbmine.finance/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<script src="https://bnbmine.finance/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+
+
+
+</body>
+
+<!-- Mirrored from dextoken-miner.finance/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Sep 2021 12:22:38 GMT -->
+</html>
